@@ -1,0 +1,10 @@
+@article{yang2024team,
+  title={Team-wise effective communication in multi-agent reinforcement learning},
+  author={Yang, Ming and Zhao, Kaiyan and Wang, Yiming and Dong, Renzhi and Du, Yali and Liu, Furui and Zhou, Mingliang and U, Leong Hou},
+  journal={Autonomous Agents and Multi-Agent Systems},
+  volume={38},
+  number={2},
+  pages={36},
+  year={2024},
+  publisher={Springer}
+}

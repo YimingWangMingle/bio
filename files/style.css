@@ -1,0 +1,195 @@
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  background-color: #F5F7FA; /* 柔和的浅灰蓝背景 */
+  color: #2E2E2E; /* 深灰字体，增强对比 */
+  font-family: 'Lato', Calibri, 'sans-serif';
+}
+
+/* 文字、段落与标题样式 */
+p, li, h1, h2, h3, h4 {
+  color: #4A4A4A; /* 中灰色文字 */
+  line-height: 22px; /* 提高可读性 */
+}
+
+/* 链接样式 */
+a:link {
+  color: #00509E; /* 深邃蓝色 */
+}
+
+a:visited {
+  color: #004085;
+}
+
+a:hover {
+  color: #6AB0F3; /* 亮蓝色 */
+}
+
+a:active {
+  color: #00509E;
+}
+
+/* 边栏样式 */
+#sidebar-wrapper {
+  background-color: #FFFFFF; /* 白色背景 */
+}
+
+.sidebar-nav li a {
+  color: #333333; /* 深灰色 */
+}
+
+.singlecolor {
+  color: #00509E; /* 统一蓝色调 */
+}
+
+/* 头部链接 */
+.header-links a {
+  color: #003373;
+  font-size: 14px;
+}
+
+.header-links a:hover {
+  color: #107da8;
+}
+
+/* About 区域样式 */
+.name-header {
+  color: #003373;
+  padding-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  text-align: left;
+}
+
+.email-info, .bio {
+  color: #787878;
+  line-height: 25px;
+}
+
+/* Timeline部分保留原样 */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 18px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 82px;
+  top: 40px;
+  bottom: 20px;
+  border-left: 3px solid #5b87bc; /* 深蓝色时间线 */
+  z-index: 0;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timespan {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.ico .entry-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #5b87bc;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+.ico .logo {
+  max-height: 60px;
+  padding-top: 8px;
+}
+
+/* 图片样式 */
+img.rounded-shadow {
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 柔和阴影 */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+img.shadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* 个人简介图片 */
+.img-responsive-profile {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 项目和服务标题 */
+.page-header {
+  color: #003373;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+/* Footer 样式 */
+footer h5 {
+  color: #787878;
+  text-align: center;
+  margin: 0;
+  padding-top: 0px;
+}
+
+/* 新闻与更新部分 */
+#news p {
+  font-size: 14px;
+  color: #787878;
+}
+
+/* 媒体查询 */
+@media (max-width: 1000px) {
+  .img-responsive-profile {
+    width: 35%;
+    margin-bottom: 15px;
+  }
+
+  .img-responsive {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Container 宽度 */
+.container-fluid {
+    width: 850px;
+    display: block;
+}
