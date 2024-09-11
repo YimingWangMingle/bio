@@ -1,4 +1,4 @@
-@@article{yang2023mixlight,
+@article{yang2023mixlight,
   title={Mixlight: Mixed-agent cooperative reinforcement learning for traffic light control},
   author={Yang, Ming and Wang, Yiming and Yu, Yang and Zhou, Mingliang and others},
   journal={IEEE Transactions on Industrial Informatics},

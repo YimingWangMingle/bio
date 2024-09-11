@@ -1,0 +1,8 @@
+@inproceedings{yang2023tiecomm,
+  title={TieComm: Learning a Hierarchical Communication Topology Based on Tie Theory},
+  author={Yang, Ming and Dong, Renzhi and Wang, Yiming and Liu, Furui and Du, Yali and Zhou, Mingliang and Hou U, Leong},
+  booktitle={International Conference on Database Systems for Advanced Applications},
+  pages={604--613},
+  year={2023},
+  organization={Springer}
+}
