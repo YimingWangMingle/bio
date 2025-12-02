@@ -1,7 +1,8 @@
-@article{wang2024efficient,
+@article{wang2023efficient,
   title={Efficient potential-based exploration in reinforcement learning using inverse dynamic bisimulation metric},
   author={Wang, Yiming and Yang, Ming and Dong, Renzhi and Sun, Binbin and Liu, Furui and others},
   journal={Advances in Neural Information Processing Systems},
   volume={36},
-  year={2024}
+  pages={38786--38797},
+  year={2023}
 }

@@ -1,361 +1,397 @@
 <!DOCTYPE html>
-<html lang="en" class="yiming_pub">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" href="./files/icon.png" >
-    <meta name="description" content="Personal Website of Wenhao Ding">
+    <title>Yiming Wang, Mingle | 王一鸣</title>
+    <meta name="description" content="Personal Website of Yiming Wang">
+    <link rel="icon" href="./files/icon.png">
     
-    <!-- Bootstrap core CSS -->
     <link href="./files/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./files/font-awesome.min.css">
+    <link href="./files/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./files/style.css">
-
 </head>
 
 <body>
-    <div id="wrapper">
-        <title>Yiming Wang</title>
-        <div id="content">
-            <!-- Page Content -->
-            <div id="page-content-wrapper">
-                <div id="block-page" class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="page-header" id="projects">
-                                <div class="header-links">
-                                    <a href="https://scholar.google.com/citations?user=2HcAwzcAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a> &nbsp / &nbsp 
-                                    <a href="https://github.com/YimingWangMingle" target="_blank">Github</a> &nbsp / &nbsp 
-                                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> &nbsp / &nbsp 
-                                    <!-- <a href="./files/cv.pdf">CV</a> -->
-                                </div>
-                            </h4>
-                        </div>
-                    </div>
+    <div class="ambient-light"></div>
 
-                    <br>
+    <nav class="floating-nav fade-in">
+        <div class="nav-links">
+            <a href="https://scholar.google.com/citations?user=2HcAwzcAAAAJ&hl=zh-CN" target="_blank" class="nav-item">Scholar</a>
+            <a href="https://github.com/YimingWangMingle" target="_blank" class="nav-item">Github</a>
+            <a href="https://www.linkedin.com/" target="_blank" class="nav-item">LinkedIn</a>
+            <!-- a href="https://www.rlstudy.com/" target="_blank" class="nav-item">XY-Lab</a -->
+            <a onclick="copyEmail(this)" class="nav-item contact-btn" title="Click to copy email">Contact</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+            <i class="fa fa-moon-o" id="theme-icon"></i>
+        </button>
+    </nav>
 
-                    <div id="about" class="row">
-                        <div id="photo" class="col-md-3">
-                            <img class="rounded-shadow img-responsive-profile" src="./files/yimingwang_1.png" alt="Profile picture">
+    <div class="main-wrapper">
+        <div class="container">
+            
+            <div class="section-profile fade-in delay-1">
+                <div class="row display-flex-center">
+                    <div class="col-md-7 col-sm-12 profile-text">
+                        <div class="status-badge">
+                            <span class="pulse-dot"></span> Ph.D. Candidate @ UM
                         </div>
-                        <div class="col-md-9">
-                            <h2 class="name-header"><strong>Yiming Wang, Mingle (王一鸣) </strong></h2>
-                            <p class="email-info">Email: wang.yiming@connect.um.edu.mo </p>        
-                            <p class="bio">I am currently a second-year Ph.D. student in <a href="https://www.fst.um.edu.mo" target="_blank">the Department of Computer Science </a>, <a href="https://skliotsc.um.edu.mo" target="_blank"> State Key Laboratory of Internet of Things for Smart City (University of Macau)</a>, 
-                                fortunate to be advised by <a href="https://www.fst.um.edu.mo/personal/ryanlhu/" target="_blank">Prof. Leong Hou U, Ryan</a>. I also had worked with <a href="https://scholar.google.com.hk/citations?user=DJY8NXMAAAAJ&hl=en" target="_blank">Prof. Liu Furui </a>, <a href="https://yalidu.github.io/" target="_blank">Prof. Yali Du </a> and <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK" target="_blank">Prof. Yang Yu </a>. Before joining UM, I obtained my bachelor's degree from the Department of Computing and Information Science at <a href="http://en.hit.edu.cn" target="_blank">Harbin Institute of Technology (HIT)</a> in 2020.
+                        <h1 class="hero-name">Yiming Wang <span class="cn-name">王一鸣</span></h1>
+                        <p class="hero-bio">
+                            I am currently a Ph.D. Candidate in <a href="https://skliotsc.um.edu.mo" target="_blank"> State Key Laboratory of Internet of Things for Smart City (University of Macau)</a>, 
+                                fortunate to be advised by <a href="https://www.fst.um.edu.mo/personal/ryanlhu/" target="_blank">Prof. Leong Hou U, Ryan</a>. I also had worked with <a href="https://personal.ntu.edu.sg/boan/" target="_blank">Prof. Bo An </a>, <a href="https://scholar.google.com.hk/citations?user=DJY8NXMAAAAJ&hl=en" target="_blank">Prof. Liu Furui </a>, <a href="https://yalidu.github.io/" target="_blank">Prof. Yali Du </a> and <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK" target="_blank">Prof. Yang Yu </a>. Before joining UM, I obtained my bachelor's degree from the Department of Computing and Information Science at <a href="http://en.hit.edu.cn" target="_blank">Harbin Institute of Technology (HIT)</a> in 2020.
                                 I am interested in improving the efficiacy and generalization of autonomous agents using simulation, reinforcement learning, and causal discovery.</p>
-                        </div>
+
+                        <p class="hero-bio" style="font-size: 14px; opacity: 0.8;">
+                            I am passionate about pursuing research that is both <strong>practically impactful</strong> or <strong>scientifically interesting</strong>. 
+                            <br><strong>(Recruiting)</strong> Always open to collaborators.
+                        </p>
                     </div>
-
-                    <div id="news" class="row">
-                        <div class="col-md-12">
-                            <h4 class="page-header" id="publications"><strong>News & Updates</strong></h4>
+                    <div class="col-md-5 col-sm-12 text-center">
+                        <div class="avatar-container">
+                            <img src="./files/yimingwang_1.png" alt="Yiming Wang" class="avatar-img">
                         </div>
-                    </div>  
-
-                    <!-- News Section -->
-                    <div class="row">
-                        <div class="col-md-12">
-                        <p><font color=#787878>2025/04 - Two paper was published in <a href="https://2025.ijcai.org/" target="_blank">IJCAI 2025</a>.</font></p>
-                        <p><font color=#787878>2025/02 - Our paper for robust point cloud registration was published in <a href="https://cvpr.thecvf.com/" target="_blank">CVPR 2025</a> </font></p>
-                        <p><font color=#787878>2024/10 - I was invited to give a talk at the 9th Huashan Forum held by Xidian University </font></p>
-                        <p><font color=#787878>2024/09 - Our paper on exploration in RL was accepteded in <a href="http://neurips.cc/Conferences/2024" target="_blank">NeurIPS 2024</a> (<span style="color: #ff3131"><strong>Spotlight (top 3%)</strong></span>) </font></p>
-                        <p><font color=#787878>2024/08 - I begin my internship in <a href="https://www.gdiist.cn/en/" target="_blank">Guangdong Institute of Intelligence Science and Technology</a>.</font></p>
-                        <p><font color=#787878>2024/05 - Our paper on multi agent communication was published in <a href="https://dl.acm.org/doi/10.1007/s10458-024-09665-6" target="_blank">AAMAS</a>.</font></p>
-                        <p><font color=#787878>2023/12 - My team wins First Prize Award of 8th Greater Bay Area IT Application System Development Competition</font></p>
-                        <p><font color=#787878>2023/11 - My poster wins the Third Prize Poster Award of <a href="https://mcsct.skliotsc.um.edu.mo/_2023/poster-session/" target="_blank">MCSCT</a>.</font></p>
-                        <p><font color=#787878>2023/09 - Our paper on exploration in RL was accepteded in <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/79f7f00cbe3003cea4d0c2326b4c0b42-Abstract-Conference.html" target="_blank">NeurIPS 2023</a>.</font></p>
-                        <p><font color=#787878>2023/07 - Our paper on RL for traffic light control was accepted to <a href="https://ieeexplore.ieee.org/abstract/document/10196017/" target="_blank">IEEE Transactions on Industrial Informatics</a>.</font></p>
-                        <p><font color=#787878>2023/07 - Our paper on multi agent communication was accepted to <a href="https://link.springer.com/chapter/10.1007/978-3-031-30637-2_40" target="_blank">DASFAA</a>.</font></p>
-                        </div>
-                    </div>
-
-                    <!-- Publications Section -->
-
-                
-                    <div id="publications" class="row">
-                        <div class="col-md-12">
-                            <h4 class="page-header"><strong>Selected Publications</strong></h4>
-                            <p> *: I am the co-first author,   †: corresponding author </p> 
-                        </div>
-                    </div>                
-
-                    <div class="row">
-                        <div id="paper10" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/bile.jpg" width='100%' alt="" style="padding-top:10px">
-                            </a >
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">BILE: An Effective Behavior-based Latent Exploration Scheme for Deep Reinforcement Learning</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Kaiyan Zhao</span>, 
-                                <span style="color: #787878">Yan Li, Leong Hou U<br>
-                                34th International Joint Conference on Artificial Intelligence (<span style="color: #000000"><strong>IJCAI</strong></span>)<span style="color: #787878">2025</span>
-                            </p >
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                openreview / 
-                                code /
-                                bibtex
-                                
-                            </p >
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="paper9" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/eder.jpg" width='100%' alt="" style="padding-top:10px">
-                            </a >
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">Efficient Diversity-based Experience Replay for Deep Reinforcement Learning</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #000000"><strong>Yiming Wang</strong><sup>*</sup></span>, 
-                                <span style="color: #787878">Kaiyan Zhao<sup>*</sup>, Yuyang Chen, Yan Li, Leong Hou U, Xiaoguang Niu<br>
-                                34th International Joint Conference on Artificial Intelligence (<span style="color: #000000"><strong>IJCAI</strong></span>)<span style="color: #787878">2025</span>
-                            </p >
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                openreview / 
-                                code /
-                                bibtex
-                                
-                            </p >
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                        <div id="paper8" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/hemora.jpg" width='100%' alt="" style="padding-top:10px">
-                            </a >
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">HeMoRa: Unsupervised Heuristic Consensus Sampling for Robust Point Cloud Registration</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;"> 
-                                <span style="color: #787878">Shaocheng Yan</span>,
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>,
-                                <span style="color: #787878">Kaiyan Zhao, Pengcheng S, Zhenjun Z, Yongjun Z, Jiayuan L<br>
-                                Conference on Computer Vision and Pattern Recognition</span>(<span style="color: #000000"><strong>CVPR</strong></span>) <span style="color: #787878">2025</span>
-                            </p >
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                openreview / 
-                                <a href="https://github.com/Laka-3DV/HeMoRa" target="_blank">code</a> /
-                                bibtex
-                                
-                            </p >
-                        </div>
-                    </div>
-
-                    <!-- Publication entries here -->
-                    <div class="row">
-                        <div id="paper7" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/EME.gif" width='100%' alt="" style="padding-top:10px">
-                            </a >
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">Rethinking Exploration in Reinforcement Learning with Effective Metric-Based Exploration Bonus</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Kaiyan Zhao</span>, 
-                                <span style="color: #787878">Furui Liu, Leong Hou U<br>
-                                Conference on Neural Information Processing Systems</span>(<span style="color: #000000"><strong>NeurIPS</strong></span>) <span style="color: #787878">2024</span> (<span style="color: #ff3131"><strong>Spotlight (top 2%)</strong></span>)
-                            </p >
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                <a href="https://sites.google.com/view/effective-metric-exploration" target="_blank">website</a >/
-                                <a href="https://openreview.net/forum?id=QpKWFLtZKi" target="_blank">openreview</a > / 
-                                <a href="https://github.com/YimingWangMingle/EME" target="_blank">code</a > /
-                                <a href="" target="_blank">bibtex</a >
-                                
-                            </p >
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div id="paper6" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/diversity.png" width='100%' alt="" style="padding-top:10px">
-                            </a >
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">Efficient Diversity-based Experience Replay for Deep Reinforcement Learning</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Kaiyan Zhao, Yuyang Chen, Xiaoguang Niu, Yan Li, Leong Hou U<br>
-                                Preprint
-                            </p >
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                <a href="https://arxiv.org/pdf/2410.20487" target="_blank">openreview</a > / 
-                                <a href="" target="_blank">code</a > /
-                                <a href="" target="_blank">bibtex</a >
-                                
-                            </p >
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div id="paper5" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/BTP.png" width='100%' alt="" style="padding-top:10px">
-                            </a >
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">Enhancing LLM Agents for Code Generation with Possibility and Pass-rate Prioritized Experience Replay</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #787878">Yuyang Chen, Kaiyan Zhao,</span> 
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Ming Yang, Jian Zhang, Xiaoguang Niu<br>
-                                Preprint
-                            </p >
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                <a href="https://arxiv.org/abs/2410.12236" target="_blank">openreview</a > / 
-                                <a href="" target="_blank">code</a > /
-                                <a href="" target="_blank">bibtex</a >
-                                
-                            </p >
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="paper4" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/liberty.png" width='100%' alt="" style="padding-top:10px">
-                            </a>
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">Efficient Potential-based Exploration in Reinforcement Learning using Inverse Dynamic Bisimulation Metric</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Ming Yang, Renzhi Dong, Binbin Sun, Furui Liu, Leong Hou U<br>
-                                    Advances in Neural Information Processing Systems</span> (<span style="color: #000000"><strong>NeurIPS</strong></span>) <span style="color: #787878">2023</span>
-                            </p>
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/79f7f00cbe3003cea4d0c2326b4c0b42-Abstract-Conference.html" target="_blank">openreview</a> / 
-                                <a href="https://github.com/yiming-wang-mingle/liberty" target="_blank">code</a> /
-                                <a href="./bibtex/liberty.txt" target="_blank">bibtex</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div id="paper3" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/team.png" width='100%' alt="" style="padding-top:10px">
-                            </a>
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">Team-wise Effective Communication in Multi-Agent Reinforcement Learning</div></font></h5>
-                
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #787878">Ming Yang</span>, 
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Kaiyan Zhao, Yali Du, Furui Liu, Mingliang Zhou, Leong Hou U<br>
-                                Autonomous Agents and Multi-Agent Systems</span> (<span style="color: #000000"><strong>AAMAS</strong></span>) <span style="color: #787878">2024, Volume 38, Issue 2</span>
-                            </p>
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                <a href="https://doi.org/10.1007/s10458-024-09665-6" target="_blank">DOI</a> / 
-                                <a href="https://github.com/MinGink/TeamComm" target="_blank">code</a> /
-                                <a href="./bibtex/team.txt" target="_blank">bibtex</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="paper2" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/tie.png" width='100%' alt="Description of GIF" style="padding-top:10px">
-                            </a>
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">TieComm: Learning a Hierarchical Communication Topology Based on Tie Theory</div></font></h5>
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #787878">Ming Yang, Renzhi Dong</span>, 
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Furui Liu, Yali Du, Mingliang Zhou, Leong Hou U, 
-                                <span><br>
-                                    International Conference on Database Systems for Advanced Applications (<span style="color: #000000"><strong>DASFAA</strong></span>) 2023
-                            </p>
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                <a href="https://link.springer.com/chapter/10.1007/978-3-031-30637-2_40" target="_blank">DOI</a> / 
-                                <a href="https://github.com/MinGink/TieComm" target="_blank">code</a> / 
-                                <a href="./bibtex/tiecomm.txt" target="_blank">bibtex</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-
-                    <div class="row">
-                        <div id="paper1" class="col-md-3">
-                            <a>
-                                <img class="img-responsive" src="./publication/mixlight.png" width='100%' alt="Description of GIF" style="padding-top:10px">
-                            </a>
-                        </div>
-                        <div class="col-md-9">
-                            <h5><font color=#003373><div style="line-height:20px">Mixlight: Mixed-agent cooperative reinforcement learning for traffic light control</div></font></h5>
-                            <p style="line-height:20px;font-size:14px;">
-                                <span style="color: #787878">Ming Yang</span>, 
-                                <span style="color: #000000"><strong>Yiming Wang</strong></span>, 
-                                <span style="color: #787878">Yu Yang, Mingliang Zhou, Leong Hou U, 
-                                <span><br>
-                                    IEEE Transactions on Industrial Informatics (<span style="color: #000000"><strong>TII</strong></span>) 2023
-                            </p>
-                            <p style="line-height:10px;font-size:14px;color: #787878">
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10196017/" target="_blank">DOI</a> / 
-                                <a href="https://github.com/MinGink/MixLight" target="_blank">code</a> / 
-                                <a href="./bibtex/mixlight.txt" target="_blank">bibtex</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-
-
-                <!-- Heading -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="page-header" id="projects"><font color=#003373><div style="line-height:15px"><strong>Academic Services</strong></div></font></h4>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p style="color: #000000"><strong>Conference Reviewer: </strong> <span style="color: #787878">ICML, ICLR, NeurIPS, AISTATS, CoRL, IJCAI, ICASSP, DASFAA, KDD, AAAI</span></p>
-                        <p style="color: #000000"><strong>Journal Reviewer: </strong> <span style="color: #787878">TMLR, IEEE TNNLS, IEEE T-ITS, IEEE Access, IEEE TII, AJCST</span></p>
-                        <!-- <p style="color: #000000"><strong>Program Committee: </strong> <span style="color: #787878"><a href="http://seasondepth-challenge.org/">ICRA 2022 SeasonDepth Challenge</a>, <a href="https://ml4ad.github.io/">NeurIPS 2022 ML4AD Workshop</a>, <a href="https://tsrml2022.github.io/">NeurIPS 2022 TSRML Workshop</a>, <a href="https://learn-to-race.org/workshop-ai4ad-ijcai2022/">IJCAI 2022 AI4AD Workshop and Challenge</a></span></p> -->
+            </div>
+
+            <div class="section-news fade-in delay-2">
+                <div class="glass-panel">
+                    <h3 class="panel-title"><i class="fa fa-bolt" style="color: #FF9500;"></i> Latest Updates</h3>
+                    <div class="news-scroll-area">
+                        <ul class="news-timeline">
+                            <li><span class="news-date">2025.11</span> <span class="news-content">Four papers accepted to <strong>AAAI 2026</strong>, one selected as <span class="text-warning" style="color: #ff0800; font-weight:bold;">oral</span>  presentation. </span></li>
+                            <li><span class="news-date">2025.10</span> <span class="news-content">I began my research visit to the <strong>AI-for-X Lab at Nanyang Technological University (NTU)</strong>.</span></li>
+                            <li><span class="news-date">2025.04</span> <span class="news-content">Two papers accepted to <strong>IJCAI 2025</strong>.</span></li>
+                            <li><span class="news-date">2025.02</span> <span class="news-content">Paper on HeMoRa accepted to <strong>CVPR 2025</strong>.</span></li>
+                            <li><span class="news-date">2024.09</span> <span class="news-content">Paper on rethinking exploration published as <span class="text-warning" style="color: #FF9500; font-weight:bold;">spotlight</span> in <strong>NeurIPS 2024</strong>.</span></li>
+                            <li><span class="news-date">2023.12</span> <span class="news-content">My team wins First Prize Award of 8th Greater Bay Area IT Application System Development Competition</span></li>
+                            <li><span class="news-date">2023.11</span> <span class="news-content">My poster wins the Third Prize Poster Award of <strong>MCSCT</strong>.</span></li>
+                            <li><span class="news-date">2023.09</span> <span class="news-content">Our paper on exploration in RL was accepteded in <strong>NeurIPS 2023</strong>.</span></li>
+                            <li><span class="news-date">2023.07</span> <span class="news-content">Our paper on RL for traffic light control was accepted to <strong>IEEE Transactions on Industrial Informatics</strong>.</span></li>
+                            <li><span class="news-date">2023.07</span> <span class="news-content">Our paper on multi agent communication was accepted to <strong>DASFAA</strong>.</span></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- /.row -->
+            </div>
 
-
-
-                    <!-- Heading -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="page-header" id="projects"><font color=#000000><div style="line-height:15px"></div></font></h4>
+            <div class="section-pubs fade-in delay-3">
+                <h2 class="section-header">Selected Publications</h2>
+                <p> *: I am the co-first author,  †: corresponding author </p> 
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/etl.png">
+                        <img src="./publication/etl.png" alt="ETL">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">Explore to Learn: Latent Exploration through Disentangled Synergy Patterns for RL in Overactuated Control</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors"><strong>Yiming Wang</strong>, Kaiyan Zhao, Xu Li, Yan Li, Jiayu Chen, Steven Morad, Leong Hou U</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">AAAI 2026 <span class="tag tag-red">Oral</span></div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://sites.google.com/view/explore-to-learn/" target="_blank" class="btn-pill paper"><i class="fa fa-external-link"></i> Paper</a>
+                            <a href="https://sites.google.com/view/explore-to-learn/" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a href="https://sites.google.com/view/explore-to-learn/" target="_blank" class="btn-pill bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
                         </div>
                     </div>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/EME.JPG">
+                        <img src="./publication/EME.JPG" alt="EME">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">Rethinking Exploration in Reinforcement Learning with Effective Metric-Based Exploration Bonus</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors"><strong>Yiming Wang</strong>, Kaiyan Zhao, Furui Liu, Leong Hou U</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">NeurIPS 2024 <span class="tag tag-orange">spotlight (top 2%)</span></div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://openreview.net/pdf?id=QpKWFLtZKi" target="_blank" class="btn-pill paper"><i class="fa fa-file-text-o"></i> OpenReview</a>
+                            <a href="https://github.com/YimingWangMingle/EME" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a href="./bibtex/eme.txt" target="_blank" class="btn-pill bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/lspe.png">
+                        <img src="./publication/lspe.png" alt="LSPE">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">Latent State-Predictive Exploration for Deep Reinforcement Learning</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors"><strong>Yiming Wang</strong>, Kaiyan Zhao, Borong Zhang, Yan Li, Leong Hou U</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">AAAI 2026</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://sites.google.com/view/lspe-robotic-control/lspe" target="_blank" class="btn-pill paper"><i class="fa fa-external-link"></i> Paper</a>
+                            <a href="https://github.com/YimingWangMingle/LSPE" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a class="btn-pill disabled bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
 
-    
+
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/dsap.png">
+                        <img src="./publication/dsap.png" alt="DSAP">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">DSAP: Enhancing Generalization in Goal-Conditioned Reinforcement Learning</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors"><strong>Yiming Wang</strong>, Kaiyan Zhao, Ming Yang, Yan Li, Furui Liu, Jiayu Chen, Leong Hou U</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">AAAI 2026</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://github.com/YimingWangMingle/DSAP" target="_blank" class="btn-pill paper"><i class="fa fa-external-link"></i> Paper</a>
+                            <a href="https://github.com/YimingWangMingle/DSAP" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a class="btn-pill disabled bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/liberty.png">
+                        <img src="./publication/liberty.png" alt="liberty">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">Efficient Potential-based Exploration in Reinforcement Learning using Inverse Dynamic Bisimulation Metric</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors"><strong>Yiming Wang</strong>, Ming Yang, Renzhi Dong, Binbin Sun, Furui Liu, Leong Hou U </div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">NeurIPS 2023</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/79f7f00cbe3003cea4d0c2326b4c0b42-Abstract-Conference.html" target="_blank" class="btn-pill paper"><i class="fa fa-file-text-o"></i> OpenReview</a>
+                            <a href="https://github.com/YimingWangMingle/liberty" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a href="./bibtex/liberty.txt" target="_blank" class="btn-pill bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/bile.jpg">
+                        <img src="./publication/bile.jpg" alt="BILE">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">BILE: An Effective Behavior-based Latent Exploration Scheme for Deep Reinforcement Learning</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors"><strong>Yiming Wang</strong>, Kaiyan Zhao, Yan Li, Leong Hou U</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">IJCAI 2025</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://sites.google.com/view/ijcai25bile/" target="_blank" class="btn-pill paper"><i class="fa fa-file-text-o"></i> OpenReview</a>
+                            <a href="https://sites.google.com/view/ijcai25bile/" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a href="./bibtex/bile.txt" target="_blank" class="btn-pill bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/mora.jpg">
+                        <img src="./publication/mora.jpg" alt="HeMoRa">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">HeMoRa: Unsupervised Heuristic Consensus Sampling for Robust Point Cloud Registration</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors">Shaocheng Yan, <strong>Yiming Wang</strong>, Kaiyan Zhao, Pengcheng S, Zhenjun Z, Yongjun Z, Jiayuan L</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">CVPR 2025</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Yan_HeMoRa_Unsupervised_Heuristic_Consensus_Sampling_for_Robust_Point_Cloud_Registration_CVPR_2025_paper.html" target="_blank" class="btn-pill paper"><i class="fa fa-file-text-o"></i> OpenReview</a>
+                            <a href="https://github.com/Laka-3DV/HeMoRa" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a href="./bibtex/hemora.txt" target="_blank" class="btn-pill bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/eder.jpg">
+                        <img src="./publication/eder.jpg" alt="EDER">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">Efficient Diversity-based Experience Replay for Deep Reinforcement Learning</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors">Kaiyan Zhao<sup>†</sup>, <strong>Yiming Wang<sup>†</sup></strong>, Yuyang Chen, Yan Li, Leong Hou U, Xiaoguang Niu</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">IJCAI 2025</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a class="btn-pill disabled"><i class="fa fa-file-text-o"></i> OpenReview</a>
+                            <a class="btn-pill disabled code"><i class="fa fa-github"></i> Code</a>
+                            <a class="btn-pill disabled bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/BTP.png">
+                        <img src="./publication/BTP.png" alt="BTP">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">Enhancing LLM Agents for Code Generation with Possibility and Pass-rate Prioritized Experience Replay</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors">Yuyang Chen, Kaiyan Zhao, <strong>Yiming Wang</strong>, Ming Yang, Jian Zhang, Xiaoguang Niu</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">Preprint</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://arxiv.org/abs/2410.12236" target="_blank" class="btn-pill paper"><i class="fa fa-file-pdf-o"></i> arXiv</a>
+                            <a class="btn-pill disabled code"><i class="fa fa-github"></i> Code</a>
+                            <a class="btn-pill disabled bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pub-card">
+                    <div class="pub-img-wrapper" data-toggle="modal" data-target="#imageModal" data-src="./publication/team.png">
+                        <img src="./publication/team.png" alt="Team-wise">
+                        <div class="img-overlay"><i class="fa fa-search-plus"></i></div>
+                    </div>
+                    <div class="pub-content">
+                        <div class="text-scroll-wrapper">
+                            <h4 class="pub-title">Team-wise Effective Communication in Multi-Agent Reinforcement Learning</h4>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-authors">Ming Yang, Kaiyan Zhao, <strong>Yiming Wang</strong>, Renzhi Dong, Yali Du, F Liu, M Zhou, Leong Hou U</div>
+                        </div>
+                        <div class="text-scroll-wrapper">
+                            <div class="pub-venue">AAMAS 2024</div>
+                        </div>
+                        <div class="pub-actions">
+                            <a href="https://doi.org/10.1007/s10458-024-09665-6" target="_blank" class="btn-pill paper"><i class="fa fa-external-link"></i> DOI</a>
+                            <a href="https://github.com/MinGink/TeamComm" target="_blank" class="btn-pill code"><i class="fa fa-github"></i> Code</a>
+                            <a href="./bibtex/team.txt" target="_blank" class="btn-pill bibtex"><i class="fa fa-quote-right"></i> BibTeX</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <footer class="site-footer fade-in delay-4">
+                <div class="footer-content">
+                    <p>&copy; 2025 Yiming Wang. Designed with Mingle.</p>
+                    <div class="map-container">
+                    <a href="https://clustrmaps.com/site/1c186"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=2BRaezSxo8JPSreGPXKJmV-trkhboc0KAQNA2J8N37I&cl=ffffff" /></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal">
+                <div class="modal-body text-center">
+                    <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <img id="modalImage" src="" alt="Preview">
                 </div>
             </div>
         </div>
-
-        <footer style="text-align:center">
-            <a href="https://clustrmaps.com/site/1c186"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=2BRaezSxo8JPSreGPXKJmV-trkhboc0KAQNA2J8N37I&cl=ffffff" /></a>
-            <br>
-            <h5 style="color:#787878;padding-top:0px"> © Copyright 2024 Yiming Wang</p>
-            <h5 style="color:#787878;padding-top:0px">Last Updated: Sep 10th, 2024</p>
-        </footer>
-        <script src="./files/jquery.min.js"></script>
-        <script src="./files/bootstrap.min.js"></script>
     </div>
+
+    <script src="./files/jquery.min.js"></script>
+    <script src="./files/bootstrap.min.js"></script>
+    <script>
+        // Image Modal Script
+        $(document).ready(function() {
+            $('.pub-img-wrapper').on('click', function() {
+                var src = $(this).data('src'); 
+                $('#modalImage').attr('src', src); 
+            });
+        });
+
+        // Dark Mode Toggle Script
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon-o');
+            themeIcon.classList.add('fa-sun-o');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('fa-moon-o');
+                themeIcon.classList.add('fa-sun-o');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.remove('fa-sun-o');
+                themeIcon.classList.add('fa-moon-o');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Email Copy Script
+        function copyEmail(element) {
+            const email = "wang.yiming@connect.um.edu.mo";
+            navigator.clipboard.writeText(email).then(() => {
+                const originalText = "Contact";
+                element.innerText = "Email Copied!";
+                element.classList.add("copied");
+                setTimeout(() => {
+                    element.innerText = originalText;
+                    element.classList.remove("copied");
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                window.location.href = "mailto:" + email;
+            });
+        }
+    </script>
 </body>
+</html>

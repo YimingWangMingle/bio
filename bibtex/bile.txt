@@ -1,0 +1,7 @@
+@inproceedings{wang2025bile,
+  title={BILE: an effective behavior-based latent exploration scheme for deep reinforcement learning},
+  author={Wang, Yiming and Zhao, Kaiyan and Li, Yan and U, Leong Hou},
+  booktitle={Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence},
+  pages={6497--6505},
+  year={2025}
+}

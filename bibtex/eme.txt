@@ -1,0 +1,8 @@
+@article{wang2024rethinking,
+  title={Rethinking exploration in reinforcement learning with effective metric-based exploration bonus},
+  author={Wang, Yiming and Zhao, Kaiyan and Liu, Furui and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={57765--57792},
+  year={2024}
+}
